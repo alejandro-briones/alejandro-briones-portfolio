@@ -1,18 +1,77 @@
 ﻿<header class="navbar">
+
     <div class="navbar-container">
 
-        <a href="#home" class="navbar-brand">
+        <a href="#home"
+           class="navbar-brand"
+           @onclick="CloseMenu">
             Alejandro.
         </a>
 
-        <nav class="navbar-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#technologies">Technologies</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
+        <button type="button"
+                class="menu-toggle @(_isMenuOpen ? "open" : "")"
+                @onclick="ToggleMenu"
+                aria-label="@(_isMenuOpen ? "Close navigation menu" : "Open navigation menu")"
+                aria-expanded="@_isMenuOpen.ToString().ToLowerInvariant()"
+                aria-controls="main-navigation">
+
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+
+        </button>
+
+        <nav id="main-navigation"
+             class="navbar-links @(_isMenuOpen ? "open" : "")">
+
+            <a href="#about"
+               @onclick="CloseMenu">
+                About
+            </a>
+
+            <a href="#experience"
+               @onclick="CloseMenu">
+                Experience
+            </a>
+
+            <a href="#projects"
+               @onclick="CloseMenu">
+                Projects
+            </a>
+
+            <a href="#technologies"
+               @onclick="CloseMenu">
+                Technologies
+            </a>
+
+            <a href="#education"
+               @onclick="CloseMenu">
+                Education
+            </a>
+
+            <a href="#contact"
+               @onclick="CloseMenu">
+                Contact
+            </a>
+
         </nav>
 
     </div>
+
 </header>
+
+@code {
+
+    private bool _isMenuOpen;
+
+    private void ToggleMenu()
+    {
+        _isMenuOpen = !_isMenuOpen;
+    }
+
+    private void CloseMenu()
+    {
+        _isMenuOpen = false;
+    }
+
+}
