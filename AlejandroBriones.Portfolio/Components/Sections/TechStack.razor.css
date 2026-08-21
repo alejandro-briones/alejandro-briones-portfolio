@@ -1,0 +1,44 @@
+﻿.technologies {
+    border-top: 1px solid var(--color-border);
+}
+
+.technology-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid var(--color-border);
+}
+
+.technology-group {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+    .technology-group:nth-child(odd) {
+        padding-right: 3rem;
+        border-right: 1px solid var(--color-border);
+    }
+
+    .technology-group:nth-child(even) {
+        padding-left: 3rem;
+    }
+
+.technology-category {
+    margin-bottom: 1.25rem;
+    color: var(--color-text-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.technology-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+}
+
+    .technology-items span {
+        color: var(--color-text-primary);
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
