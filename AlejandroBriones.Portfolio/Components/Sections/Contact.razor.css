@@ -42,6 +42,7 @@
     }
 
         .contact-link:hover .contact-label,
+        .contact-link:hover .contact-icon,
         .contact-link:hover .contact-arrow {
             color: var(--color-accent);
         }
@@ -89,6 +90,21 @@
         background-color: var(--color-surface);
         border-color: var(--color-accent);
     }
+
+.contact-link-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 0;
+}
+
+.contact-icon {
+    flex-shrink: 0;
+    width: 24px;
+    color: var(--color-text-secondary);
+    font-size: 1.25rem;
+    transition: color var(--transition);
+}
 
 @media (max-width: 768px) {
 
