@@ -2,25 +2,6 @@
     border-top: 1px solid var(--color-border);
 }
 
-.section-heading {
-    max-width: 750px;
-    margin-bottom: 3rem;
-}
-
-.section-label {
-    margin-bottom: 0.75rem;
-    color: var(--color-accent);
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-}
-
-.section-heading h2 {
-    font-size: clamp(2rem, 4vw, 3.25rem);
-    line-height: 1.15;
-    letter-spacing: -0.03em;
-}
-
 .about-content {
     max-width: 760px;
     display: grid;
