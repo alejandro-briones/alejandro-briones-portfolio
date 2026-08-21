@@ -1,0 +1,47 @@
+﻿<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-main">
+
+            <div class="footer-identity">
+
+                <p class="footer-name">
+                    Alejandro Briones
+                </p>
+
+                <p class="footer-role">
+                    .NET Full Stack Developer
+                </p>
+
+            </div>
+
+            <a href="#home"
+               class="back-to-top">
+                Back to top
+                <span aria-hidden="true">↑</span>
+            </a>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © @_currentYear Alejandro Briones
+            </p>
+
+            <p>
+                Built with Blazor WebAssembly and .NET 10
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+@code {
+
+    private readonly int _currentYear = DateTime.Now.Year;
+
+}
