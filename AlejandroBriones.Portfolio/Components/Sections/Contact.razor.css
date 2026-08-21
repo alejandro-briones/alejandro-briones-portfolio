@@ -72,6 +72,24 @@
     transition: color var(--transition);
 }
 
+.resume-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    padding: 0.8rem 1.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    color: var(--color-text-primary);
+    font-weight: 600;
+    transition: background-color var(--transition), border-color var(--transition);
+}
+
+    .resume-button:hover {
+        background-color: var(--color-surface);
+        border-color: var(--color-accent);
+    }
+
 @media (max-width: 768px) {
 
     .contact-layout {
