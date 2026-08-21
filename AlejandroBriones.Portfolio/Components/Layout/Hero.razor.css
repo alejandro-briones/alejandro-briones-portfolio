@@ -1,0 +1,79 @@
+﻿.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 72px;
+}
+
+.hero-container {
+    width: min(90%, var(--max-width));
+    margin: 0 auto;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-greeting {
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero h1 {
+    margin-bottom: 0.25rem;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.hero h2 {
+    color: var(--color-text-secondary);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin-top: 2rem;
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.button-primary {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+}
+
+    .button-primary:hover {
+        background-color: var(--color-accent-hover);
+    }
+
+.button-secondary {
+    border-color: var(--color-border);
+    color: var(--color-text-primary);
+}
+
+    .button-secondary:hover {
+        background-color: var(--color-surface);
+    }
