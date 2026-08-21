@@ -92,3 +92,22 @@ section {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+@media (max-width: 768px) {
+
+    .container {
+        width: min(92%, var(--max-width));
+    }
+
+    section {
+        padding: 4.5rem 0;
+    }
+
+    .section-heading {
+        margin-bottom: 2.25rem;
+    }
+
+        .section-heading h2 {
+            font-size: clamp(2rem, 9vw, 2.75rem);
+        }
+}

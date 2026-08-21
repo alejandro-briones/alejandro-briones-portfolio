@@ -79,4 +79,17 @@
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    .project-card {
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    .project-header {
+        margin-bottom: 2rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.35rem;
+    }
 }

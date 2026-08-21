@@ -64,5 +64,22 @@
     .experience-item {
         grid-template-columns: 1fr;
         gap: 0.75rem;
+        padding: 2rem 0;
+    }
+
+    .experience-meta {
+        font-size: 0.8rem;
+    }
+
+    .experience-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .experience-description {
+        margin-bottom: 1.25rem;
+    }
+
+    .technology-list {
+        gap: 0.5rem;
     }
 }
