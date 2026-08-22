@@ -58,18 +58,20 @@
     height: 8px;
     background-color: var(--color-accent);
     border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.08), 0 0 8px rgba(88, 166, 255, 0.24);
-    animation: status-indicator-glow 3s ease-in-out infinite;
+    box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.09), 0 0 8px rgba(88, 166, 255, 0.28);
+    animation: status-indicator-glow 2.6s ease-in-out infinite;
 }
 
 @keyframes status-indicator-glow {
 
     0%, 100% {
-        box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.08), 0 0 8px rgba(88, 166, 255, 0.22);
+        transform: scale(1);
+        box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.09), 0 0 8px rgba(88, 166, 255, 0.26);
     }
 
     50% {
-        box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.11), 0 0 10px rgba(88, 166, 255, 0.34);
+        transform: scale(1.04);
+        box-shadow: 0 0 0 5px rgba(88, 166, 255, 0.13), 0 0 13px rgba(88, 166, 255, 0.45);
     }
 }
 
