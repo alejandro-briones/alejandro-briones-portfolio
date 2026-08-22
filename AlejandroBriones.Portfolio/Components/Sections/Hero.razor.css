@@ -1,4 +1,5 @@
 ﻿.hero {
+    --pattern-parallax: 0px;
     position: relative;
     min-height: 100vh;
     display: flex;
@@ -18,6 +19,8 @@
         background-size: 26px 26px;
         -webkit-mask-image: radial-gradient( ellipse at 72% 42%, #000 0%, #000 30%, rgba(0, 0, 0, 0.8) 48%, rgba(0, 0, 0, 0.35) 65%, transparent 82% );
         mask-image: radial-gradient( ellipse at 72% 42%, #000 0%, #000 30%, rgba(0, 0, 0, 0.8) 48%, rgba(0, 0, 0, 0.35) 65%, transparent 82% );
+        transform: translate3d( 0, var(--pattern-parallax), 0 );
+        will-change: transform;
         pointer-events: none;
         z-index: 0;
     }
@@ -231,6 +234,14 @@
         color: var(--color-accent);
         font-size: 1rem;
     }
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero::before {
+        transform: none;
+        will-change: auto;
+    }
+}
 
 @media (max-width: 1000px) {
 

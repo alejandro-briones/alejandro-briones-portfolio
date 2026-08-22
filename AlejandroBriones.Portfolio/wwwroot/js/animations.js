@@ -214,6 +214,94 @@
         updateActiveSection();
     }
 
+    function initHeroParallax() {
+        const hero = document.querySelector(".hero");
+
+        if (!hero) {
+            return;
+        }
+
+        const reducedMotion = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        );
+
+        const mobileViewport = window.matchMedia(
+            "(max-width: 768px)"
+        );
+
+        let ticking = false;
+
+        function updateParallax() {
+            ticking = false;
+
+            if (
+                reducedMotion.matches ||
+                mobileViewport.matches
+            ) {
+                hero.style.setProperty(
+                    "--pattern-parallax",
+                    "0px"
+                );
+
+                return;
+            }
+
+            const rect = hero.getBoundingClientRect();
+
+            if (rect.bottom <= 0) {
+                return;
+            }
+
+            const progress = Math.min(
+                Math.max(
+                    -rect.top / Math.max(rect.height, 1),
+                    0
+                ),
+                1
+            );
+
+            const offset = progress * 28;
+
+            hero.style.setProperty(
+                "--pattern-parallax",
+                `${offset.toFixed(2)}px`
+            );
+        }
+
+        function requestUpdate() {
+            if (ticking) {
+                return;
+            }
+
+            ticking = true;
+
+            requestAnimationFrame(updateParallax);
+        }
+
+        window.addEventListener(
+            "scroll",
+            requestUpdate,
+            { passive: true }
+        );
+
+        window.addEventListener(
+            "resize",
+            requestUpdate
+        );
+
+        reducedMotion.addEventListener(
+            "change",
+            requestUpdate
+        );
+
+        mobileViewport.addEventListener(
+            "change",
+            requestUpdate
+        );
+
+        updateParallax();
+    }
+
     function initializePortfolioMotion() {
         if (initialized) {
             return true;
@@ -230,6 +318,7 @@
         initRevealAnimations(sections);
         initStaggerAnimations();
         initActiveNavigation();
+        initHeroParallax();
 
         initialized = true;
 
