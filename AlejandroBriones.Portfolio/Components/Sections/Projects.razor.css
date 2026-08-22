@@ -55,6 +55,32 @@
         line-height: 1.75;
     }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+    .project-links a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        color: var(--color-text-primary);
+        font-size: 0.85rem;
+        font-weight: 600;
+        transition: color var(--transition);
+    }
+
+        .project-links a:hover {
+            color: var(--color-accent);
+        }
+
+    .project-links i {
+        color: var(--color-accent);
+        font-size: 0.9rem;
+    }
+
 .technology-list {
     display: flex;
     flex-wrap: wrap;
@@ -109,5 +135,9 @@
 
     .project-content h3 {
         font-size: 1.35rem;
+    }
+
+    .project-links {
+        gap: 1rem;
     }
 }
