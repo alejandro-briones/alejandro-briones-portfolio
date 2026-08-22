@@ -22,10 +22,37 @@
 .navbar-brand {
     position: relative;
     z-index: 1001;
+    display: inline-flex;
+    align-items: center;
     color: var(--color-text-primary);
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-family: "Cascadia Code", "Consolas", monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    transition: color var(--transition), transform var(--transition);
 }
+
+.brand-symbol {
+    color: var(--color-accent);
+    transition: color var(--transition);
+}
+
+.brand-initials {
+    color: var(--color-text-primary);
+    transition: color var(--transition);
+}
+
+.navbar-brand:hover {
+    transform: translateY(-1px);
+}
+
+    .navbar-brand:hover .brand-initials {
+        color: var(--color-accent);
+    }
+
+    .navbar-brand:hover .brand-symbol {
+        color: var(--color-accent-hover);
+    }
 
 .navbar-links {
     display: flex;
