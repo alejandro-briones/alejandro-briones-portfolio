@@ -126,6 +126,94 @@
         });
     }
 
+    function initActiveNavigation() {
+        const navLinks = [
+            ...document.querySelectorAll(
+                '#main-navigation a[href^="#"]'
+            )
+        ];
+
+        const navigationItems = navLinks
+            .map(link => {
+                const targetSelector = link.getAttribute("href");
+
+                return {
+                    link,
+                    section: document.querySelector(targetSelector)
+                };
+            })
+            .filter(item => item.section);
+
+        if (navigationItems.length === 0) {
+            return;
+        }
+
+        let ticking = false;
+
+        function updateActiveSection() {
+            ticking = false;
+
+            const marker = window.innerHeight * 0.35;
+
+            let activeItem = null;
+
+            navigationItems.forEach(item => {
+                const rect = item.section.getBoundingClientRect();
+
+                if (rect.top <= marker && rect.bottom > 72) {
+                    activeItem = item;
+                }
+            });
+
+            const isAtBottom =
+                window.scrollY + window.innerHeight >=
+                document.documentElement.scrollHeight - 4;
+
+            if (isAtBottom) {
+                activeItem = navigationItems[navigationItems.length - 1];
+            }
+
+            navigationItems.forEach(item => {
+                const isActive = item === activeItem;
+
+                item.link.classList.toggle("active", isActive);
+
+                if (isActive) {
+                    item.link.setAttribute(
+                        "aria-current",
+                        "location"
+                    );
+                }
+                else {
+                    item.link.removeAttribute("aria-current");
+                }
+            });
+        }
+
+        function requestUpdate() {
+            if (ticking) {
+                return;
+            }
+
+            ticking = true;
+
+            requestAnimationFrame(updateActiveSection);
+        }
+
+        window.addEventListener(
+            "scroll",
+            requestUpdate,
+            { passive: true }
+        );
+
+        window.addEventListener(
+            "resize",
+            requestUpdate
+        );
+
+        updateActiveSection();
+    }
+
     function initializePortfolioMotion() {
         if (initialized) {
             return true;
@@ -141,6 +229,7 @@
 
         initRevealAnimations(sections);
         initStaggerAnimations();
+        initActiveNavigation();
 
         initialized = true;
 

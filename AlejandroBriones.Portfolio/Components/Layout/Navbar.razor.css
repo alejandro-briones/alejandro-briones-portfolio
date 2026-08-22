@@ -61,6 +61,7 @@
 }
 
     .navbar-links a {
+        position: relative;
         color: var(--color-text-secondary);
         font-size: 0.9rem;
         font-weight: 500;
@@ -69,6 +70,29 @@
 
         .navbar-links a:hover {
             color: var(--color-text-primary);
+        }
+
+        .navbar-links a.active {
+            color: var(--color-accent);
+        }
+
+        .navbar-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -0.55rem;
+            height: 2px;
+            background-color: var(--color-accent);
+            border-radius: 999px;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform var(--transition);
+        }
+
+        .navbar-links a:hover::after,
+        .navbar-links a.active::after {
+            transform: scaleX(1);
         }
 
 .menu-toggle {
@@ -130,6 +154,14 @@
             color: var(--color-text-primary);
             font-size: 1.15rem;
         }
+
+            .navbar-links a::after {
+                display: none;
+            }
+
+            .navbar-links a.active {
+                color: var(--color-accent);
+            }
 
     .menu-toggle.open span:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
