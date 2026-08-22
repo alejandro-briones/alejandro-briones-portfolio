@@ -73,6 +73,27 @@ section {
     letter-spacing: -0.03em;
 }
 
+html.motion-ready .motion-reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1), transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+    html.motion-ready .motion-reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+@media (prefers-reduced-motion: reduce) {
+
+    html.motion-ready .motion-reveal,
+    html.motion-ready .motion-reveal.is-visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
