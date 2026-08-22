@@ -60,6 +60,72 @@
         });
     }
 
+    function initStaggerAnimations() {
+        const reducedMotion = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+        if (reducedMotion || !("IntersectionObserver" in window)) {
+            return;
+        }
+
+        const groups = [
+            {
+                sectionSelector: "#experience",
+                itemSelector: ".experience-item",
+                delayStep: 90
+            },
+            {
+                sectionSelector: "#projects",
+                itemSelector: ".project-card",
+                delayStep: 90
+            }
+        ];
+
+        groups.forEach(group => {
+            const section = document.querySelector(group.sectionSelector);
+
+            if (!section) {
+                return;
+            }
+
+            const items = [
+                ...section.querySelectorAll(group.itemSelector)
+            ];
+
+            items.forEach((item, index) => {
+                item.classList.add("motion-stagger");
+
+                item.style.setProperty(
+                    "--stagger-delay",
+                    `${index * group.delayStep}ms`
+                );
+            });
+
+            const observer = new IntersectionObserver(
+                entries => {
+                    const entry = entries[0];
+
+                    if (!entry.isIntersecting) {
+                        return;
+                    }
+
+                    items.forEach(item => {
+                        item.classList.add("is-stagger-visible");
+                    });
+
+                    observer.disconnect();
+                },
+                {
+                    threshold: 0.12,
+                    rootMargin: "0px 0px -8% 0px"
+                }
+            );
+
+            observer.observe(section);
+        });
+    }
+
     function initializePortfolioMotion() {
         if (initialized) {
             return true;
@@ -74,6 +140,7 @@
         }
 
         initRevealAnimations(sections);
+        initStaggerAnimations();
 
         initialized = true;
 

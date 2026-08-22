@@ -55,6 +55,28 @@
         font-size: 0.8rem;
     }
 
+.experience-item.motion-stagger {
+    opacity: 0;
+    translate: 0 16px;
+    transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1), translate 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--stagger-delay, 0ms);
+}
+
+    .experience-item.motion-stagger.is-stagger-visible {
+        opacity: 1;
+        translate: 0 0;
+    }
+
+@media (prefers-reduced-motion: reduce) {
+
+    .experience-item.motion-stagger,
+    .experience-item.motion-stagger.is-stagger-visible {
+        opacity: 1;
+        translate: none;
+        transition: none;
+    }
+}
+
 @media (max-width: 768px) {
 
     .experience-item {
