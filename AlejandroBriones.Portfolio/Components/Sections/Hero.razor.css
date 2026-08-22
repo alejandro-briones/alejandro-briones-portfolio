@@ -60,6 +60,14 @@
     font-weight: 600;
 }
 
+.hero-specialization {
+    margin-top: 0.75rem;
+    color: var(--color-accent);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
 .hero-description {
     max-width: 650px;
     margin-top: 2rem;
@@ -261,5 +269,10 @@
 
     .hero-stack {
         width: 100%;
+    }
+
+    .hero-specialization {
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
     }
 }
