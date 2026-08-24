@@ -70,21 +70,155 @@
 </head>
 
 <body>
+
     <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
+
+        <div class="app-loading-screen"
+             role="status"
+             aria-live="polite"
+             aria-label="Loading Alejandro Briones portfolio">
+
+            <div class="loading-pattern"
+                 aria-hidden="true"></div>
+
+            <div class="loading-content">
+
+                <div class="loading-brand"
+                     aria-hidden="true">
+
+                    <span class="loading-brand-symbol">
+                        &lt;/
+                    </span>
+
+                    <span class="loading-brand-name">
+                        alejandro
+                    </span>
+
+                    <span class="loading-brand-symbol">
+                        &gt;
+                    </span>
+
+                </div>
+
+                <p class="loading-role">
+                    SOFTWARE ENGINEER · FULL STACK .NET DEVELOPER
+                </p>
+
+                <p class="loading-title">
+                    Loading portfolio
+                </p>
+
+                <p class="loading-description">
+                    Preparing the experience...
+                </p>
+
+                <div class="loading-status">
+
+                    <div class="loading-progress"
+                         aria-hidden="true">
+
+                        <div class="loading-progress-bar"></div>
+
+                    </div>
+
+                    <div class="loading-progress-meta">
+
+                        <span>
+                            Blazor WebAssembly
+                        </span>
+
+                        <span class="loading-progress-text"></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="." class="reload">Reload</a>
-        <span class="dismiss">🗙</span>
+    <div id="blazor-error-ui"
+         role="alert">
+
+        <div class="error-screen">
+
+            <div class="error-pattern"
+                 aria-hidden="true"></div>
+
+            <div class="error-card">
+
+                <div class="error-brand"
+                     aria-hidden="true">
+
+                    <span class="error-brand-symbol">
+                        &lt;/
+                    </span>
+
+                    <span>
+                        alejandro
+                    </span>
+
+                    <span class="error-brand-symbol">
+                        &gt;
+                    </span>
+
+                </div>
+
+                <p class="error-label">
+                    PORTFOLIO ERROR
+                </p>
+
+                <p class="error-title">
+                    Something went wrong.
+                </p>
+
+                <p class="error-description">
+                    The portfolio couldn't finish loading correctly.
+                    Reload the page to try again.
+                </p>
+
+                <div class="error-actions">
+
+                    <a href="."
+                       class="reload error-reload">
+
+                        <i class="bi bi-arrow-clockwise"
+                           aria-hidden="true"></i>
+
+                        Reload portfolio
+                    </a>
+
+                    <span class="dismiss error-dismiss"
+                          role="button"
+                          aria-label="Dismiss error message">
+
+                        Dismiss
+                    </span>
+
+                </div>
+
+                <div class="error-footer">
+
+                    <i class="bi bi-code-slash"
+                       aria-hidden="true"></i>
+
+                    <span>
+                        Blazor WebAssembly · .NET 10
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
+
     <script src="_framework/blazor.webassembly#[.{fingerprint}].js"></script>
     <script src="js/animations.js"></script>
+
 </body>
 
 </html>
