@@ -45,22 +45,6 @@ jobs:
       - name: Publish application
         run: dotnet publish $PROJECT_PATH -c Release --no-restore
 
-      - name: Configure GitHub Pages base path
-        shell: bash
-        run: |
-          REPOSITORY_NAME="${GITHUB_REPOSITORY#*/}"
-          BASE_PATH="/${REPOSITORY_NAME}/"
-
-          sed -i \
-            "s|<base href=\"/\" />|<base href=\"${BASE_PATH}\" />|" \
-            "$PUBLISH_DIR/index.html"
-
-          echo "Configured base href: ${BASE_PATH}"
-
-          grep -q \
-            "<base href=\"${BASE_PATH}\" />" \
-            "$PUBLISH_DIR/index.html"
-
       - name: Disable Jekyll processing
         shell: bash
         run: touch "$PUBLISH_DIR/.nojekyll"
