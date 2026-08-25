@@ -4,7 +4,7 @@ Personal developer portfolio built with **Blazor WebAssembly and .NET 10**, desi
 
 ## Live Portfolio
 
-[View the portfolio](https://alejandro-briones.github.io/alejandro-briones-portfolio/)
+[View the portfolio](https://alejandrobriones.dev/)
 
 ## Overview
 
@@ -129,15 +129,14 @@ dotnet publish ./AlejandroBriones.Portfolio/AlejandroBriones.Portfolio.csproj -c
 
 ## Deployment
 
-The portfolio is deployed automatically to **GitHub Pages** through **GitHub Actions**.
+The portfolio is deployed automatically to **GitHub Pages** through **GitHub Actions** and served from the custom domain **alejandrobriones.dev**.
 
 Every push to the `main` branch triggers the deployment workflow, which:
 
 1. Restores the .NET dependencies
 2. Builds and publishes the Blazor WebAssembly application
-3. Configures the GitHub Pages base path
-4. Creates the static deployment artifact
-5. Deploys the application to GitHub Pages
+3. Creates the static deployment artifact
+4. Deploys the application to GitHub Pages
 
 The deployment workflow is located at:
 
@@ -149,7 +148,7 @@ The deployment workflow is located at:
 
 - [LinkedIn](https://www.linkedin.com/in/josealejandrobrionesarroyo)
 - [GitHub](https://github.com/alejandro-briones)
-- [Portfolio](https://alejandro-briones.github.io/alejandro-briones-portfolio/)
+- [Portfolio](https://alejandrobriones.dev/)
 
 ---
 
