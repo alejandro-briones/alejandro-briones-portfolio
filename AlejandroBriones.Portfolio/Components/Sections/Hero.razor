@@ -1,4 +1,6 @@
-﻿<section id="home" class="hero">
+﻿@inject IStringLocalizer<SharedResource> Localizer
+
+<section id="home" class="hero">
 
     <div class="hero-container">
 
@@ -7,16 +9,18 @@
             <div class="hero-content">
 
                 <div class="hero-status">
+
                     <span class="status-indicator"
                           aria-hidden="true"></span>
 
                     <span>
-                        Open to remote opportunities
+                        @Localizer["Hero_OpenToRemoteOpportunities"]
                     </span>
+
                 </div>
 
                 <p class="hero-greeting">
-                    Hello, I'm
+                    @Localizer["Hero_Greeting"]
                 </p>
 
                 <h1>
@@ -24,30 +28,27 @@
                 </h1>
 
                 <h2>
-                    Software Engineer
+                    @Localizer["Hero_Role"]
                 </h2>
 
                 <p class="hero-specialization">
-                    Full Stack .NET Developer · Backend-Focused
+                    @Localizer["Hero_Specialization"]
                 </p>
 
                 <p class="hero-description">
-                    Software Engineer focused on building reliable and maintainable
-                    enterprise applications with C#, .NET and SQL Server. Experienced
-                    in backend development, database design, service integration and
-                    full-stack development for insurance and reinsurance systems.
+                    @Localizer["Hero_Description"]
                 </p>
 
                 <div class="hero-actions">
 
                     <a href="#contact"
                        class="button button-primary">
-                        Contact Me
+                        @Localizer["Hero_ContactMe"]
                     </a>
 
                     <a href="#projects"
                        class="button button-secondary">
-                        View Projects
+                        @Localizer["Hero_ViewProjects"]
                     </a>
 
                 </div>
@@ -57,7 +58,7 @@
                     <a href="https://www.linkedin.com/in/josealejandrobrionesarroyo"
                        target="_blank"
                        rel="noopener noreferrer"
-                       aria-label="Visit my LinkedIn profile">
+                       aria-label='@Localizer["Hero_LinkedInAriaLabel"]'>
 
                         <i class="bi bi-linkedin"
                            aria-hidden="true"></i>
@@ -68,7 +69,7 @@
                     <a href="https://github.com/alejandro-briones"
                        target="_blank"
                        rel="noopener noreferrer"
-                       aria-label="Visit my GitHub profile">
+                       aria-label='@Localizer["Hero_GitHubAriaLabel"]'>
 
                         <i class="bi bi-github"
                            aria-hidden="true"></i>
@@ -90,12 +91,12 @@
             </div>
 
             <aside class="hero-stack"
-                   aria-label="Core technology stack">
+                   aria-label='@Localizer["Hero_CoreStackAriaLabel"]'>
 
                 <div class="stack-header">
 
                     <span class="stack-title">
-                        CORE STACK
+                        @Localizer["Hero_CoreStackTitle"]
                     </span>
 
                     <span class="stack-dot"
@@ -108,7 +109,7 @@
                     <div class="stack-row">
 
                         <span class="stack-category">
-                            Language
+                            @Localizer["Hero_StackLanguage"]
                         </span>
 
                         <strong>
@@ -120,7 +121,7 @@
                     <div class="stack-row">
 
                         <span class="stack-category">
-                            Platform
+                            @Localizer["Hero_StackPlatform"]
                         </span>
 
                         <strong>
@@ -132,7 +133,7 @@
                     <div class="stack-row">
 
                         <span class="stack-category">
-                            Web
+                            @Localizer["Hero_StackWeb"]
                         </span>
 
                         <strong>
@@ -144,7 +145,7 @@
                     <div class="stack-row">
 
                         <span class="stack-category">
-                            Data
+                            @Localizer["Hero_StackData"]
                         </span>
 
                         <strong>
@@ -161,7 +162,7 @@
                        aria-hidden="true"></i>
 
                     <span>
-                        This portfolio is built with Blazor WebAssembly
+                        @Localizer["Hero_StackFooter"]
                     </span>
 
                 </div>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+
+  <data name="Home_PageTitle" xml:space="preserve">
+    <value>Alejandro Briones | Software Engineer &amp; Full Stack .NET Developer</value>
+  </data>
+
+  <data name="Navbar_HomeAriaLabel" xml:space="preserve">
+    <value>Go to homepage</value>
+  </data>
+
+  <data name="Navbar_About" xml:space="preserve">
+    <value>About</value>
+  </data>
+
+  <data name="Navbar_Experience" xml:space="preserve">
+    <value>Experience</value>
+  </data>
+
+  <data name="Navbar_Projects" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+
+  <data name="Navbar_Technologies" xml:space="preserve">
+    <value>Technologies</value>
+  </data>
+
+  <data name="Navbar_Education" xml:space="preserve">
+    <value>Education</value>
+  </data>
+
+  <data name="Navbar_Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+
+  <data name="Navbar_OpenMenuAriaLabel" xml:space="preserve">
+    <value>Open navigation menu</value>
+  </data>
+
+  <data name="Navbar_CloseMenuAriaLabel" xml:space="preserve">
+    <value>Close navigation menu</value>
+  </data>
+
+  <data name="Theme_SwitchToLightMode" xml:space="preserve">
+    <value>Switch to light mode</value>
+  </data>
+
+  <data name="Theme_SwitchToDarkMode" xml:space="preserve">
+    <value>Switch to dark mode</value>
+  </data>
+
+  <data name="Hero_OpenToRemoteOpportunities" xml:space="preserve">
+    <value>Open to remote opportunities</value>
+  </data>
+
+  <data name="Hero_Greeting" xml:space="preserve">
+    <value>Hello, I'm</value>
+  </data>
+
+  <data name="Hero_Role" xml:space="preserve">
+    <value>Software Engineer</value>
+  </data>
+
+  <data name="Hero_Specialization" xml:space="preserve">
+    <value>Full Stack .NET Developer · Backend-Focused</value>
+  </data>
+
+  <data name="Hero_Description" xml:space="preserve">
+    <value>Software Engineer focused on building reliable and maintainable enterprise applications with C#, .NET and SQL Server. Experienced in backend development, database design, service integration and full-stack development for insurance and reinsurance systems.</value>
+  </data>
+
+  <data name="Hero_ContactMe" xml:space="preserve">
+    <value>Contact Me</value>
+  </data>
+
+  <data name="Hero_ViewProjects" xml:space="preserve">
+    <value>View Projects</value>
+  </data>
+
+  <data name="Hero_LinkedInAriaLabel" xml:space="preserve">
+    <value>Visit my LinkedIn profile</value>
+  </data>
+
+  <data name="Hero_GitHubAriaLabel" xml:space="preserve">
+    <value>Visit my GitHub profile</value>
+  </data>
+
+  <data name="Hero_CoreStackAriaLabel" xml:space="preserve">
+    <value>Core technology stack</value>
+  </data>
+
+  <data name="Hero_CoreStackTitle" xml:space="preserve">
+    <value>CORE STACK</value>
+  </data>
+
+  <data name="Hero_StackLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+
+  <data name="Hero_StackPlatform" xml:space="preserve">
+    <value>Platform</value>
+  </data>
+
+  <data name="Hero_StackWeb" xml:space="preserve">
+    <value>Web</value>
+  </data>
+
+  <data name="Hero_StackData" xml:space="preserve">
+    <value>Data</value>
+  </data>
+
+  <data name="Hero_StackFooter" xml:space="preserve">
+    <value>This portfolio is built with Blazor WebAssembly</value>
+  </data>
+
+  <data name="Footer_Role" xml:space="preserve">
+    <value>Software Engineer · Full Stack .NET Developer</value>
+  </data>
+
+  <data name="Footer_BackToTop" xml:space="preserve">
+    <value>Back to top</value>
+  </data>
+
+  <data name="Footer_BuiltWith" xml:space="preserve">
+    <value>Built with Blazor WebAssembly and .NET 10</value>
+  </data>
+</root>

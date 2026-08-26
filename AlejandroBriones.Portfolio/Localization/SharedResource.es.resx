@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+
+  <data name="Home_PageTitle" xml:space="preserve">
+    <value>Alejandro Briones | Ingeniero de Software y Desarrollador Full Stack .NET</value>
+  </data>
+
+  <data name="Navbar_HomeAriaLabel" xml:space="preserve">
+    <value>Ir al inicio</value>
+  </data>
+
+  <data name="Navbar_About" xml:space="preserve">
+    <value>Sobre mí</value>
+  </data>
+
+  <data name="Navbar_Experience" xml:space="preserve">
+    <value>Experiencia</value>
+  </data>
+
+  <data name="Navbar_Projects" xml:space="preserve">
+    <value>Proyectos</value>
+  </data>
+
+  <data name="Navbar_Technologies" xml:space="preserve">
+    <value>Tecnologías</value>
+  </data>
+
+  <data name="Navbar_Education" xml:space="preserve">
+    <value>Educación</value>
+  </data>
+
+  <data name="Navbar_Contact" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+
+  <data name="Navbar_OpenMenuAriaLabel" xml:space="preserve">
+    <value>Abrir menú de navegación</value>
+  </data>
+
+  <data name="Navbar_CloseMenuAriaLabel" xml:space="preserve">
+    <value>Cerrar menú de navegación</value>
+  </data>
+
+  <data name="Theme_SwitchToLightMode" xml:space="preserve">
+    <value>Cambiar a modo claro</value>
+  </data>
+
+  <data name="Theme_SwitchToDarkMode" xml:space="preserve">
+    <value>Cambiar a modo oscuro</value>
+  </data>
+
+  <data name="Hero_OpenToRemoteOpportunities" xml:space="preserve">
+    <value>Abierto a oportunidades remotas</value>
+  </data>
+
+  <data name="Hero_Greeting" xml:space="preserve">
+    <value>Hola, soy</value>
+  </data>
+
+  <data name="Hero_Role" xml:space="preserve">
+    <value>Ingeniero de Software</value>
+  </data>
+
+  <data name="Hero_Specialization" xml:space="preserve">
+    <value>Desarrollador Full Stack .NET · Enfoque en Backend</value>
+  </data>
+
+  <data name="Hero_Description" xml:space="preserve">
+    <value>Ingeniero de Software enfocado en construir aplicaciones empresariales confiables y mantenibles con C#, .NET y SQL Server. Experiencia en desarrollo backend, diseño de bases de datos, integración de servicios y desarrollo full stack para sistemas de seguros y reaseguros.</value>
+  </data>
+
+  <data name="Hero_ContactMe" xml:space="preserve">
+    <value>Contáctame</value>
+  </data>
+
+  <data name="Hero_ViewProjects" xml:space="preserve">
+    <value>Ver proyectos</value>
+  </data>
+
+  <data name="Hero_LinkedInAriaLabel" xml:space="preserve">
+    <value>Visitar mi perfil de LinkedIn</value>
+  </data>
+
+  <data name="Hero_GitHubAriaLabel" xml:space="preserve">
+    <value>Visitar mi perfil de GitHub</value>
+  </data>
+
+  <data name="Hero_CoreStackAriaLabel" xml:space="preserve">
+    <value>Stack tecnológico principal</value>
+  </data>
+
+  <data name="Hero_CoreStackTitle" xml:space="preserve">
+    <value>STACK PRINCIPAL</value>
+  </data>
+
+  <data name="Hero_StackLanguage" xml:space="preserve">
+    <value>Lenguaje</value>
+  </data>
+
+  <data name="Hero_StackPlatform" xml:space="preserve">
+    <value>Plataforma</value>
+  </data>
+
+  <data name="Hero_StackWeb" xml:space="preserve">
+    <value>Web</value>
+  </data>
+
+  <data name="Hero_StackData" xml:space="preserve">
+    <value>Datos</value>
+  </data>
+
+  <data name="Hero_StackFooter" xml:space="preserve">
+    <value>Este portafolio está desarrollado con Blazor WebAssembly</value>
+  </data>
+
+  <data name="Footer_Role" xml:space="preserve">
+    <value>Ingeniero de Software · Desarrollador Full Stack .NET</value>
+  </data>
+
+  <data name="Footer_BackToTop" xml:space="preserve">
+    <value>Volver arriba</value>
+  </data>
+
+  <data name="Footer_BuiltWith" xml:space="preserve">
+    <value>Desarrollado con Blazor WebAssembly y .NET 10</value>
+  </data>
+</root>

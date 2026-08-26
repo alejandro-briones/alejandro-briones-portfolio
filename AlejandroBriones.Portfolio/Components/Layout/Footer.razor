@@ -1,4 +1,6 @@
-﻿<footer class="footer">
+﻿@inject IStringLocalizer<SharedResource> Localizer
+
+<footer class="footer">
 
     <div class="footer-container">
 
@@ -11,17 +13,19 @@
                 </p>
 
                 <p class="footer-role">
-                    Software Engineer · Full Stack .NET Developer
+                    @Localizer["Footer_Role"]
                 </p>
 
             </div>
 
             <a href="#home"
                class="back-to-top">
-                Back to top
+
+                @Localizer["Footer_BackToTop"]
 
                 <i class="bi bi-arrow-up"
                    aria-hidden="true"></i>
+
             </a>
 
         </div>
@@ -33,7 +37,7 @@
             </p>
 
             <p>
-                Built with Blazor WebAssembly and .NET 10
+                @Localizer["Footer_BuiltWith"]
             </p>
 
         </div>
@@ -44,6 +48,7 @@
 
 @code {
 
-    private readonly int _currentYear = DateTime.Now.Year;
+    private readonly int _currentYear =
+        DateTime.Now.Year;
 
 }

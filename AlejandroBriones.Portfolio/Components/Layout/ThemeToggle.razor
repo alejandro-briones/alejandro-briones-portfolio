@@ -3,6 +3,7 @@
 @implements IDisposable
 
 @inject ThemeService ThemeService
+@inject IStringLocalizer<SharedResource> Localizer
 
 <button type="button"
         class="theme-toggle"
@@ -22,8 +23,8 @@
 
     private string ToggleLabel =>
         ThemeService.IsDarkMode
-            ? "Switch to light mode"
-            : "Switch to dark mode";
+            ? Localizer["Theme_SwitchToLightMode"]
+            : Localizer["Theme_SwitchToDarkMode"];
 
     private string ToggleIcon =>
         ThemeService.IsDarkMode

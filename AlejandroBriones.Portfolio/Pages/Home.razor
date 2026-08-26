@@ -1,6 +1,8 @@
 ﻿@page "/"
 
-<PageTitle>Alejandro Briones | Software Engineer & Full Stack .NET Developer</PageTitle>
+@inject IStringLocalizer<SharedResource> Localizer
+
+<PageTitle>@Localizer["Home_PageTitle"]</PageTitle>
 
 <Hero />
 

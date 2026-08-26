@@ -1,11 +1,13 @@
-﻿<header class="navbar">
+﻿@inject IStringLocalizer<SharedResource> Localizer
+
+<header class="navbar">
 
     <div class="navbar-container">
 
         <a href="#home"
            class="navbar-brand"
            @onclick="CloseMenu"
-           aria-label="Go to homepage">
+           aria-label='@Localizer["Navbar_HomeAriaLabel"]'>
 
             <span class="brand-symbol">&lt;/</span>
             <span class="brand-initials">alejandro</span>
@@ -20,32 +22,32 @@
 
                 <a href="#about"
                    @onclick="CloseMenu">
-                    About
+                    @Localizer["Navbar_About"]
                 </a>
 
                 <a href="#experience"
                    @onclick="CloseMenu">
-                    Experience
+                    @Localizer["Navbar_Experience"]
                 </a>
 
                 <a href="#projects"
                    @onclick="CloseMenu">
-                    Projects
+                    @Localizer["Navbar_Projects"]
                 </a>
 
                 <a href="#technologies"
                    @onclick="CloseMenu">
-                    Technologies
+                    @Localizer["Navbar_Technologies"]
                 </a>
 
                 <a href="#education"
                    @onclick="CloseMenu">
-                    Education
+                    @Localizer["Navbar_Education"]
                 </a>
 
                 <a href="#contact"
                    @onclick="CloseMenu">
-                    Contact
+                    @Localizer["Navbar_Contact"]
                 </a>
 
             </nav>
@@ -55,7 +57,7 @@
             <button type="button"
                     class="menu-toggle @(_isMenuOpen ? "open" : "")"
                     @onclick="ToggleMenu"
-                    aria-label="@(_isMenuOpen ? "Close navigation menu" : "Open navigation menu")"
+                    aria-label="@MenuToggleLabel"
                     aria-expanded="@_isMenuOpen.ToString().ToLowerInvariant()"
                     aria-controls="main-navigation">
 
@@ -74,6 +76,11 @@
 @code {
 
     private bool _isMenuOpen;
+
+    private string MenuToggleLabel =>
+        _isMenuOpen
+            ? Localizer["Navbar_CloseMenuAriaLabel"]
+            : Localizer["Navbar_OpenMenuAriaLabel"];
 
     private void ToggleMenu()
     {
