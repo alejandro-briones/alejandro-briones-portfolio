@@ -15,6 +15,8 @@ builder.Services.AddScoped(
             builder.HostEnvironment.BaseAddress)
     });
 
+builder.Services.AddLocalization();
+
 builder.Services.AddScoped<ThemeService>();
 
 await builder.Build().RunAsync();
