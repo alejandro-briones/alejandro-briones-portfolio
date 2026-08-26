@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Alejandro Briones | Portfolio</title>
+
+    <script>
+        (() => {
+            const location = window.location;
+
+            const path =
+                location.pathname
+                    .slice(1)
+                    .replace(/&/g, "~and~");
+
+            const query =
+                location.search
+                    ? "&q=" +
+                      location.search
+                          .slice(1)
+                          .replace(/&/g, "~and~")
+                    : "";
+
+            const redirectUrl =
+                location.protocol +
+                "//" +
+                location.hostname +
+                (location.port
+                    ? ":" + location.port
+                    : "") +
+                "/?p=/" +
+                path +
+                query +
+                location.hash;
+
+            location.replace(
+                redirectUrl);
+        })();
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

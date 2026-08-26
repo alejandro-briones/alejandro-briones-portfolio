@@ -60,6 +60,46 @@
 
     <base href="/" />
 
+    <script>
+        (() => {
+            const location =
+                window.location;
+
+            if (!location.search) {
+                return;
+            }
+
+            const parameters =
+                new URLSearchParams(
+                    location.search);
+
+            const redirectedPath =
+                parameters.get("p");
+
+            if (!redirectedPath) {
+                return;
+            }
+
+            const redirectedQuery =
+                parameters.get("q");
+
+            const restoredPath =
+                redirectedPath
+                    .replace(/~and~/g, "&") +
+                (redirectedQuery
+                    ? "?" +
+                    redirectedQuery
+                        .replace(/~and~/g, "&")
+                    : "") +
+                location.hash;
+
+            window.history.replaceState(
+                null,
+                "",
+                restoredPath);
+        })();
+    </script>
+
     <script src="js/theme.js"></script>
     <script src="js/culture.js"></script>
 
