@@ -1,13 +1,19 @@
-﻿<section id="projects" class="projects">
+﻿@inject IStringLocalizer<SharedResource> Localizer
+
+<section id="projects" class="projects">
 
     <div class="container">
 
         <div class="section-heading">
-            <p class="section-label">PROJECTS</p>
+
+            <p class="section-label">
+                @Localizer["Projects_Label"]
+            </p>
 
             <h2>
-                Selected work and projects.
+                @Localizer["Projects_Title"]
             </h2>
+
         </div>
 
         <div class="projects-grid">
@@ -17,7 +23,7 @@
                 <div class="project-header">
 
                     <span class="project-type">
-                        Professional
+                        @Localizer["Projects_Professional"]
                     </span>
 
                     <span class="project-number">
@@ -29,24 +35,15 @@
                 <div class="project-content">
 
                     <h3>
-                        Enterprise Billing &amp; Electronic Invoicing Platform
+                        @Localizer["Projects_BillingTitle"]
                     </h3>
 
                     <p>
-                        Designed and developed core components of an enterprise
-                        billing and electronic invoicing platform for insurance
-                        operations, working across database architecture, backend
-                        services, web application workflows, system integration
-                        and document generation.
+                        @Localizer["Projects_BillingDescription1"]
                     </p>
 
                     <p>
-                        Implemented SQL Server structures and transactional logic,
-                        C#/.NET Framework application components and WCF/SOAP
-                        service operations, integrating workflows for CFDI 4.0
-                        processing, fiscal XML generation and validation, UUID
-                        and QR management, PDF reporting, and deployment across
-                        development and QA environments.
+                        @Localizer["Projects_BillingDescription2"]
                     </p>
 
                 </div>
@@ -71,7 +68,7 @@
                 <div class="project-header">
 
                     <span class="project-type">
-                        Professional
+                        @Localizer["Projects_Professional"]
                     </span>
 
                     <span class="project-number">
@@ -83,24 +80,15 @@
                 <div class="project-content">
 
                     <h3>
-                        Reinsurance Account Statement &amp; Reporting Platform
+                        @Localizer["Projects_AccountStatementTitle"]
                     </h3>
 
                     <p>
-                        Developed an enterprise account statement solution for
-                        reinsurance operations, implementing complex financial
-                        business rules for statement generation, historical
-                        balances, payment movements, periodic processing and
-                        account-level financial calculations.
+                        @Localizer["Projects_AccountStatementDescription1"]
                     </p>
 
                     <p>
-                        Built functionality across the ASP.NET Web Forms application,
-                        WCF/SOAP service layer, SQL Server stored procedures and
-                        reporting components, supporting preview and definitive
-                        statement workflows, PDF and Excel reporting, validation,
-                        persistence and processing across development and QA
-                        environments.
+                        @Localizer["Projects_AccountStatementDescription2"]
                     </p>
 
                 </div>
@@ -124,7 +112,7 @@
                 <div class="project-header">
 
                     <span class="project-type">
-                        Professional
+                        @Localizer["Projects_Professional"]
                     </span>
 
                     <span class="project-number">
@@ -136,23 +124,15 @@
                 <div class="project-content">
 
                     <h3>
-                        Enterprise Reinsurance Policy &amp; Transaction Processing
+                        @Localizer["Projects_ReinsurancePolicyTitle"]
                     </h3>
 
                     <p>
-                        Developed and maintained enterprise workflows for
-                        reinsurance policy and financial transaction processing,
-                        including policy capture, validation, authorization,
-                        payment operations and integration with existing insurance
-                        and reinsurance modules.
+                        @Localizer["Projects_ReinsurancePolicyDescription1"]
                     </p>
 
                     <p>
-                        Implemented and optimized transactional SQL Server logic
-                        and .NET Framework application components to coordinate
-                        policy and movement data across interconnected processes,
-                        preserving data integrity and supporting reliable business
-                        operations.
+                        @Localizer["Projects_ReinsurancePolicyDescription2"]
                     </p>
 
                 </div>
@@ -174,7 +154,7 @@
                 <div class="project-header">
 
                     <span class="project-type">
-                        Personal
+                        @Localizer["Projects_Personal"]
                     </span>
 
                     <span class="project-number">
@@ -186,21 +166,15 @@
                 <div class="project-content">
 
                     <h3>
-                        Personal Developer Portfolio
+                        @Localizer["Projects_PortfolioTitle"]
                     </h3>
 
                     <p>
-                        Designed and developed this portfolio from scratch using
-                        Blazor WebAssembly and .NET 10, following a component-based
-                        architecture with reusable Razor components, custom
-                        responsive styling and interactive client-side behavior.
+                        @Localizer["Projects_PortfolioDescription1"]
                     </p>
 
                     <p>
-                        Implemented responsive navigation, scroll-based animations,
-                        accessibility support, SEO and social sharing metadata, and
-                        an automated CI/CD workflow with GitHub Actions for
-                        deployment to GitHub Pages.
+                        @Localizer["Projects_PortfolioDescription2"]
                     </p>
 
                     <div class="project-links">
@@ -212,7 +186,7 @@
                             <i class="bi bi-github"
                                aria-hidden="true"></i>
 
-                            Source Code
+                            @Localizer["Projects_SourceCode"]
                         </a>
 
                     </div>

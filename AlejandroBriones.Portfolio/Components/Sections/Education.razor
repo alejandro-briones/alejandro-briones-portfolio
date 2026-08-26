@@ -1,15 +1,17 @@
-﻿<section id="education" class="education">
+﻿@inject IStringLocalizer<SharedResource> Localizer
+
+<section id="education" class="education">
 
     <div class="container">
 
         <div class="section-heading">
 
             <p class="section-label">
-                EDUCATION
+                @Localizer["Education_Label"]
             </p>
 
             <h2>
-                Education and continuous learning.
+                @Localizer["Education_Title"]
             </h2>
 
         </div>
@@ -19,7 +21,7 @@
             <div class="education-column">
 
                 <p class="column-title">
-                    Academic Background
+                    @Localizer["Education_AcademicBackground"]
                 </p>
 
                 <article class="education-item">
@@ -29,8 +31,7 @@
                         <div>
 
                             <h3>
-                                Bachelor of Engineering (B.Eng.) —
-                                Software Development and Management
+                                @Localizer["Education_BachelorTitle"]
                             </h3>
 
                             <p class="institution">
@@ -46,19 +47,11 @@
                     </div>
 
                     <p class="education-description">
-                        Built upon the technical foundation established
-                        during the Multiplatform Software Development
-                        degree, extending that preparation toward
-                        engineering-level software design, development,
-                        project execution and management of technology
-                        solutions.
+                        @Localizer["Education_BachelorDescription1"]
                     </p>
 
                     <p class="education-description">
-                        This program represents the continuation of the
-                        same academic pathway, advancing from hands-on
-                        software development foundations into broader
-                        software engineering and management competencies.
+                        @Localizer["Education_BachelorDescription2"]
                     </p>
 
                 </article>
@@ -70,8 +63,7 @@
                         <div>
 
                             <h3>
-                                Associate Degree — Multiplatform
-                                Software Development
+                                @Localizer["Education_AssociateTitle"]
                             </h3>
 
                             <p class="institution">
@@ -87,18 +79,11 @@
                     </div>
 
                     <p class="education-description">
-                        Completed as a Técnico Superior Universitario (TSU),
-                        equivalent in level to an Associate's Degree,
-                        with a strong practical foundation in software
-                        development and multiplatform application
-                        technologies.
+                        @Localizer["Education_AssociateDescription1"]
                     </p>
 
                     <p class="education-description">
-                        This degree established the technical foundation
-                        and academic prerequisite for continuing into the
-                        Bachelor of Engineering in Software Development
-                        and Management.
+                        @Localizer["Education_AssociateDescription2"]
                     </p>
 
                 </article>
@@ -108,7 +93,7 @@
             <div class="education-column">
 
                 <p class="column-title">
-                    Professional Learning
+                    @Localizer["Education_ProfessionalLearning"]
                 </p>
 
                 <article class="education-item">
@@ -118,8 +103,7 @@
                         <div>
 
                             <h3>
-                                Microsoft Full-Stack Developer
-                                Professional Certificate
+                                @Localizer["Education_FullStackCertificateTitle"]
                             </h3>
 
                             <p class="institution">
@@ -129,16 +113,13 @@
                         </div>
 
                         <span class="status">
-                            In Progress
+                            @Localizer["Education_InProgress"]
                         </span>
 
                     </div>
 
                     <p class="education-description">
-                        Professional training focused on full-stack
-                        software development with C#, .NET, ASP.NET Core,
-                        web technologies, databases, security and
-                        Microsoft development tools.
+                        @Localizer["Education_FullStackCertificateDescription"]
                     </p>
 
                 </article>
@@ -150,22 +131,19 @@
                         <div>
 
                             <h3>
-                                Microsoft Azure Certification Preparation
+                                @Localizer["Education_AzureTitle"]
                             </h3>
 
                         </div>
 
                         <span class="status">
-                            In Progress
+                            @Localizer["Education_InProgress"]
                         </span>
 
                     </div>
 
                     <p class="education-description">
-                        Building foundational and practical knowledge
-                        of Microsoft Azure as part of my professional
-                        development roadmap toward cloud-based .NET
-                        development and Microsoft Azure certification.
+                        @Localizer["Education_AzureDescription"]
                     </p>
 
                 </article>

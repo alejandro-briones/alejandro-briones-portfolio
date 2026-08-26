@@ -148,6 +148,146 @@
     <value>Mi experiencia abarca ASP.NET Web Forms, servicios WCF/SOAP, SQL Server, T-SQL, SSRS/RDLC, IIS y JavaScript, además de desarrollo moderno con .NET 10, Blazor WebAssembly y aplicaciones web basadas en componentes.</value>
   </data>
 
+  <data name="Experience_Label" xml:space="preserve">
+    <value>EXPERIENCIA</value>
+  </data>
+
+  <data name="Experience_Title" xml:space="preserve">
+    <value>Experiencia profesional.</value>
+  </data>
+
+  <data name="Experience_CurrentDate" xml:space="preserve">
+    <value>2025 — Actualidad</value>
+  </data>
+
+  <data name="Experience_CurrentRole" xml:space="preserve">
+    <value>Desarrollador Full Stack .NET</value>
+  </data>
+
+  <data name="Experience_CurrentDescription1" xml:space="preserve">
+    <value>Desarrollo y mantengo software empresarial para operaciones de seguros y reaseguros, trabajando en servicios backend, aplicaciones web, bases de datos relacionales, reportes e integraciones de sistemas.</value>
+  </data>
+
+  <data name="Experience_CurrentDescription2" xml:space="preserve">
+    <value>Mi trabajo incluye el diseño e implementación de lógica de negocio con C# y .NET Framework, el desarrollo y optimización de soluciones en SQL Server, la integración de servicios WCF/SOAP, la construcción de flujos de reporteo y el soporte de aplicaciones en ambientes de desarrollo, QA y despliegue en IIS.</value>
+  </data>
+
+  <data name="Experience_DevelopTalentDate" xml:space="preserve">
+    <value>May 2024 — Oct 2024</value>
+  </data>
+
+  <data name="Experience_DevelopTalentRole" xml:space="preserve">
+    <value>Desarrollador de Software</value>
+  </data>
+
+  <data name="Experience_DevelopTalentDescription1" xml:space="preserve">
+    <value>Contribuí en actividades de desarrollo e implementación de software a lo largo de distintas etapas del ciclo de desarrollo, incluyendo desarrollo de aplicaciones, depuración, pruebas, documentación técnica y mantenimiento de soluciones.</value>
+  </data>
+
+  <data name="Experience_DevelopTalentDescription2" xml:space="preserve">
+    <value>Esta experiencia fortaleció mis fundamentos en prácticas de ingeniería de software, resolución de problemas, desarrollo colaborativo y entrega de soluciones de software mantenibles.</value>
+  </data>
+
+  <data name="Experience_SoftwareDevelopment" xml:space="preserve">
+    <value>Desarrollo de Software</value>
+  </data>
+
+  <data name="Experience_Debugging" xml:space="preserve">
+    <value>Depuración</value>
+  </data>
+
+  <data name="Experience_Testing" xml:space="preserve">
+    <value>Pruebas</value>
+  </data>
+
+  <data name="Experience_TechnicalDocumentation" xml:space="preserve">
+    <value>Documentación Técnica</value>
+  </data>
+
+  <data name="Experience_QNodeDate" xml:space="preserve">
+    <value>Mar 2024 — Ago 2024</value>
+  </data>
+
+  <data name="Experience_QNodeRole" xml:space="preserve">
+    <value>Practicante de Desarrollo de Software</value>
+  </data>
+
+  <data name="Experience_QNodeDescription1" xml:space="preserve">
+    <value>Contribuí al diseño y desarrollo de una aplicación móvil para iOS desarrollada con Flutter, participando en arquitectura de aplicaciones, modelado de datos, prototipado UI/UX, implementación y revisiones colaborativas de código.</value>
+  </data>
+
+  <data name="Experience_QNodeDescription2" xml:space="preserve">
+    <value>Trabajé en un entorno de desarrollo remoto utilizando Git y flujos de trabajo basados en GitHub, adquiriendo experiencia práctica al traducir requerimientos y prototipos en componentes funcionales de la aplicación.</value>
+  </data>
+
+  <data name="Projects_Label" xml:space="preserve">
+    <value>PROYECTOS</value>
+  </data>
+
+  <data name="Projects_Title" xml:space="preserve">
+    <value>Selección de trabajos y proyectos.</value>
+  </data>
+
+  <data name="Projects_Professional" xml:space="preserve">
+    <value>Profesional</value>
+  </data>
+
+  <data name="Projects_Personal" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+
+  <data name="Projects_BillingTitle" xml:space="preserve">
+    <value>Plataforma Empresarial de Facturación y Facturación Electrónica</value>
+  </data>
+
+  <data name="Projects_BillingDescription1" xml:space="preserve">
+    <value>Diseñé y desarrollé componentes centrales de una plataforma empresarial de facturación y facturación electrónica para operaciones de seguros, trabajando en arquitectura de bases de datos, servicios backend, flujos de aplicaciones web, integración de sistemas y generación de documentos.</value>
+  </data>
+
+  <data name="Projects_BillingDescription2" xml:space="preserve">
+    <value>Implementé estructuras y lógica transaccional en SQL Server, componentes de aplicación con C#/.NET Framework y operaciones de servicios WCF/SOAP, integrando flujos para procesamiento de CFDI 4.0, generación y validación de XML fiscal, gestión de UUID y códigos QR, reportes PDF y despliegues en ambientes de desarrollo y QA.</value>
+  </data>
+
+  <data name="Projects_AccountStatementTitle" xml:space="preserve">
+    <value>Plataforma de Estados de Cuenta y Reportes de Reaseguro</value>
+  </data>
+
+  <data name="Projects_AccountStatementDescription1" xml:space="preserve">
+    <value>Desarrollé una solución empresarial de estados de cuenta para operaciones de reaseguro, implementando reglas de negocio financieras complejas para generación de estados de cuenta, saldos históricos, movimientos de pago, procesamiento periódico y cálculos financieros a nivel de cuenta.</value>
+  </data>
+
+  <data name="Projects_AccountStatementDescription2" xml:space="preserve">
+    <value>Desarrollé funcionalidad en la aplicación ASP.NET Web Forms, la capa de servicios WCF/SOAP, procedimientos almacenados de SQL Server y componentes de reporteo, soportando flujos de estados de cuenta previos y definitivos, reportes PDF y Excel, validación, persistencia y procesamiento en ambientes de desarrollo y QA.</value>
+  </data>
+
+  <data name="Projects_ReinsurancePolicyTitle" xml:space="preserve">
+    <value>Procesamiento Empresarial de Pólizas y Transacciones de Reaseguro</value>
+  </data>
+
+  <data name="Projects_ReinsurancePolicyDescription1" xml:space="preserve">
+    <value>Desarrollé y mantuve flujos empresariales para el procesamiento de pólizas de reaseguro y transacciones financieras, incluyendo captura, validación y autorización de pólizas, operaciones de pago e integración con módulos existentes de seguros y reaseguros.</value>
+  </data>
+
+  <data name="Projects_ReinsurancePolicyDescription2" xml:space="preserve">
+    <value>Implementé y optimicé lógica transaccional en SQL Server y componentes de aplicación con .NET Framework para coordinar datos de pólizas y movimientos entre procesos interconectados, preservando la integridad de los datos y soportando operaciones de negocio confiables.</value>
+  </data>
+
+  <data name="Projects_PortfolioTitle" xml:space="preserve">
+    <value>Portafolio Personal de Desarrollo</value>
+  </data>
+
+  <data name="Projects_PortfolioDescription1" xml:space="preserve">
+    <value>Diseñé y desarrollé este portafolio desde cero utilizando Blazor WebAssembly y .NET 10, siguiendo una arquitectura basada en componentes con componentes Razor reutilizables, estilos responsive personalizados y comportamiento interactivo del lado del cliente.</value>
+  </data>
+
+  <data name="Projects_PortfolioDescription2" xml:space="preserve">
+    <value>Implementé navegación responsive, animaciones basadas en scroll, soporte de accesibilidad, metadata para SEO y redes sociales, y un flujo automatizado de CI/CD con GitHub Actions para el despliegue en GitHub Pages.</value>
+  </data>
+
+  <data name="Projects_SourceCode" xml:space="preserve">
+    <value>Código Fuente</value>
+  </data>
+
   <data name="Technologies_Label" xml:space="preserve">
     <value>TECNOLOGÍAS</value>
   </data>
@@ -178,6 +318,66 @@
 
   <data name="Technologies_StoredProcedures" xml:space="preserve">
     <value>Procedimientos Almacenados</value>
+  </data>
+
+  <data name="Education_Label" xml:space="preserve">
+    <value>EDUCACIÓN</value>
+  </data>
+
+  <data name="Education_Title" xml:space="preserve">
+    <value>Educación y aprendizaje continuo.</value>
+  </data>
+
+  <data name="Education_AcademicBackground" xml:space="preserve">
+    <value>Formación Académica</value>
+  </data>
+
+  <data name="Education_BachelorTitle" xml:space="preserve">
+    <value>Ingeniería en Desarrollo y Gestión de Software</value>
+  </data>
+
+  <data name="Education_BachelorDescription1" xml:space="preserve">
+    <value>Continuación de la formación técnica adquirida durante el programa de Desarrollo de Software Multiplataforma, ampliando esa preparación hacia el diseño y desarrollo de software a nivel de ingeniería, la ejecución de proyectos y la gestión de soluciones tecnológicas.</value>
+  </data>
+
+  <data name="Education_BachelorDescription2" xml:space="preserve">
+    <value>Este programa representa la continuación de la misma trayectoria académica, avanzando desde fundamentos prácticos de desarrollo de software hacia competencias más amplias de ingeniería de software y gestión.</value>
+  </data>
+
+  <data name="Education_AssociateTitle" xml:space="preserve">
+    <value>Técnico Superior Universitario (TSU) — Desarrollo de Software Multiplataforma</value>
+  </data>
+
+  <data name="Education_AssociateDescription1" xml:space="preserve">
+    <value>Formación como Técnico Superior Universitario (TSU), equivalente en nivel a un Associate's Degree, con una sólida base práctica en desarrollo de software y tecnologías para aplicaciones multiplataforma.</value>
+  </data>
+
+  <data name="Education_AssociateDescription2" xml:space="preserve">
+    <value>Este grado estableció la base técnica y el requisito académico para continuar con la Ingeniería en Desarrollo y Gestión de Software.</value>
+  </data>
+
+  <data name="Education_ProfessionalLearning" xml:space="preserve">
+    <value>Formación Profesional</value>
+  </data>
+
+  <data name="Education_FullStackCertificateTitle" xml:space="preserve">
+    <value>Microsoft Full-Stack Developer Professional Certificate</value>
+  </data>
+
+  <data name="Education_InProgress" xml:space="preserve">
+    <value>En Progreso</value>
+  </data>
+
+  <data name="Education_FullStackCertificateDescription" xml:space="preserve">
+    <value>Formación profesional enfocada en desarrollo de software full stack con C#, .NET, ASP.NET Core, tecnologías web, bases de datos, seguridad y herramientas de desarrollo de Microsoft.</value>
+  </data>
+
+  <data name="Education_AzureTitle" xml:space="preserve">
+    <value>Preparación para Certificación Microsoft Azure</value>
+  </data>
+
+  <data name="Education_AzureDescription" xml:space="preserve">
+    <value>Desarrollo de conocimientos fundamentales y prácticos de Microsoft Azure como parte de mi ruta de crecimiento profesional hacia el desarrollo .NET basado en la nube y la certificación en Microsoft Azure.</value>
   </data>
 
   <data name="Contact_Label" xml:space="preserve">

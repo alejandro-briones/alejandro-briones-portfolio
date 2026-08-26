@@ -1,15 +1,17 @@
-﻿<section id="experience" class="experience">
+﻿@inject IStringLocalizer<SharedResource> Localizer
+
+<section id="experience" class="experience">
 
     <div class="container">
 
         <div class="section-heading">
 
             <p class="section-label">
-                EXPERIENCE
+                @Localizer["Experience_Label"]
             </p>
 
             <h2>
-                Professional experience.
+                @Localizer["Experience_Title"]
             </h2>
 
         </div>
@@ -19,13 +21,15 @@
             <article class="experience-item">
 
                 <div class="experience-meta">
-                    <span>2025 — Present</span>
+                    <span>
+                        @Localizer["Experience_CurrentDate"]
+                    </span>
                 </div>
 
                 <div class="experience-content">
 
                     <h3>
-                        Full Stack .NET Developer
+                        @Localizer["Experience_CurrentRole"]
                     </h3>
 
                     <p class="experience-company">
@@ -33,20 +37,11 @@
                     </p>
 
                     <p class="experience-description">
-                        Develop and maintain enterprise software for
-                        insurance and reinsurance operations, working
-                        across backend services, web applications,
-                        relational databases, reporting and system
-                        integrations.
+                        @Localizer["Experience_CurrentDescription1"]
                     </p>
 
                     <p class="experience-description">
-                        My work includes designing and implementing
-                        business logic with C# and .NET Framework,
-                        developing and optimizing SQL Server solutions,
-                        integrating WCF/SOAP services, building reporting
-                        workflows and supporting applications across
-                        development, QA and IIS deployment environments.
+                        @Localizer["Experience_CurrentDescription2"]
                     </p>
 
                     <div class="technology-list">
@@ -69,13 +64,15 @@
             <article class="experience-item">
 
                 <div class="experience-meta">
-                    <span>May 2024 — Oct 2024</span>
+                    <span>
+                        @Localizer["Experience_DevelopTalentDate"]
+                    </span>
                 </div>
 
                 <div class="experience-content">
 
                     <h3>
-                        Software Developer
+                        @Localizer["Experience_DevelopTalentRole"]
                     </h3>
 
                     <p class="experience-company">
@@ -83,25 +80,31 @@
                     </p>
 
                     <p class="experience-description">
-                        Contributed to software development and
-                        implementation activities across different stages
-                        of the development lifecycle, including application
-                        development, debugging, testing, technical
-                        documentation and solution maintenance.
+                        @Localizer["Experience_DevelopTalentDescription1"]
                     </p>
 
                     <p class="experience-description">
-                        This experience strengthened my foundation in
-                        software engineering practices, problem solving,
-                        collaborative development and the delivery of
-                        maintainable software solutions.
+                        @Localizer["Experience_DevelopTalentDescription2"]
                     </p>
 
                     <div class="technology-list">
-                        <span>Software Development</span>
-                        <span>Debugging</span>
-                        <span>Testing</span>
-                        <span>Technical Documentation</span>
+
+                        <span>
+                            @Localizer["Experience_SoftwareDevelopment"]
+                        </span>
+
+                        <span>
+                            @Localizer["Experience_Debugging"]
+                        </span>
+
+                        <span>
+                            @Localizer["Experience_Testing"]
+                        </span>
+
+                        <span>
+                            @Localizer["Experience_TechnicalDocumentation"]
+                        </span>
+
                     </div>
 
                 </div>
@@ -111,13 +114,15 @@
             <article class="experience-item">
 
                 <div class="experience-meta">
-                    <span>Mar 2024 — Aug 2024</span>
+                    <span>
+                        @Localizer["Experience_QNodeDate"]
+                    </span>
                 </div>
 
                 <div class="experience-content">
 
                     <h3>
-                        Software Developer Intern
+                        @Localizer["Experience_QNodeRole"]
                     </h3>
 
                     <p class="experience-company">
@@ -125,19 +130,11 @@
                     </p>
 
                     <p class="experience-description">
-                        Contributed to the design and development of an
-                        iOS mobile application built with Flutter,
-                        participating in application architecture,
-                        data modeling, UI/UX prototyping, implementation
-                        and collaborative code reviews.
+                        @Localizer["Experience_QNodeDescription1"]
                     </p>
 
                     <p class="experience-description">
-                        Worked in a remote development environment using
-                        Git and GitHub-based workflows while gaining
-                        practical experience translating requirements
-                        and prototypes into functional application
-                        components.
+                        @Localizer["Experience_QNodeDescription2"]
                     </p>
 
                     <div class="technology-list">
