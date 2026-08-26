@@ -46,11 +46,20 @@
     font-weight: 500;
 }
 
-.education-header time {
+.education-period {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
     flex-shrink: 0;
     color: var(--color-text-secondary);
     font-size: 0.85rem;
+    white-space: nowrap;
 }
+
+    .education-period time {
+        color: inherit;
+        font: inherit;
+    }
 
 .status {
     flex-shrink: 0;
