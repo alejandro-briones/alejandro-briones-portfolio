@@ -1,4 +1,6 @@
-﻿<section id="contact" class="contact">
+﻿@inject IStringLocalizer<SharedResource> Localizer
+
+<section id="contact" class="contact">
 
     <div class="container">
 
@@ -7,26 +9,26 @@
             <div class="contact-heading">
 
                 <p class="section-label">
-                    CONTACT
+                    @Localizer["Contact_Label"]
                 </p>
 
                 <h2>
-                    Let's build something together.
+                    @Localizer["Contact_Title"]
                 </h2>
 
                 <p class="contact-description">
-                    I'm open to discussing software engineering opportunities,
-                    .NET development roles and projects involving backend or
-                    full-stack application development.
+                    @Localizer["Contact_Description"]
                 </p>
 
                 <a href="documents/Alejandro-Briones-CV.pdf"
                    class="resume-button"
                    download>
-                    Download CV
+
+                    @Localizer["Contact_DownloadCv"]
 
                     <i class="bi bi-download"
                        aria-hidden="true"></i>
+
                 </a>
 
             </div>
@@ -37,7 +39,7 @@
                    class="contact-link"
                    target="_blank"
                    rel="noopener noreferrer"
-                   aria-label="Visit my LinkedIn profile">
+                   aria-label='@Localizer["Contact_LinkedInAriaLabel"]'>
 
                     <div class="contact-link-content">
 
@@ -45,13 +47,15 @@
                            aria-hidden="true"></i>
 
                         <div>
+
                             <span class="contact-label">
                                 LinkedIn
                             </span>
 
                             <span class="contact-value">
-                                Connect with me
+                                @Localizer["Contact_LinkedInValue"]
                             </span>
+
                         </div>
 
                     </div>
@@ -65,7 +69,7 @@
                    class="contact-link"
                    target="_blank"
                    rel="noopener noreferrer"
-                   aria-label="Send me an email via Gmail">
+                   aria-label='@Localizer["Contact_GmailAriaLabel"]'>
 
                     <div class="contact-link-content">
 
@@ -73,6 +77,7 @@
                            aria-hidden="true"></i>
 
                         <div>
+
                             <span class="contact-label">
                                 Gmail
                             </span>
@@ -80,6 +85,7 @@
                             <span class="contact-value">
                                 j.alejandro.briones.a22@gmail.com
                             </span>
+
                         </div>
 
                     </div>
@@ -93,7 +99,7 @@
                    class="contact-link"
                    target="_blank"
                    rel="noopener noreferrer"
-                   aria-label="Visit my GitHub profile">
+                   aria-label='@Localizer["Contact_GitHubAriaLabel"]'>
 
                     <div class="contact-link-content">
 
@@ -101,13 +107,15 @@
                            aria-hidden="true"></i>
 
                         <div>
+
                             <span class="contact-label">
                                 GitHub
                             </span>
 
                             <span class="contact-value">
-                                Explore my repositories
+                                @Localizer["Contact_GitHubValue"]
                             </span>
+
                         </div>
 
                     </div>

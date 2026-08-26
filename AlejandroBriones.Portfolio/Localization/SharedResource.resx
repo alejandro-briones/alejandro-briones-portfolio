@@ -128,6 +128,94 @@
     <value>This portfolio is built with Blazor WebAssembly</value>
   </data>
 
+  <data name="About_Label" xml:space="preserve">
+    <value>ABOUT ME</value>
+  </data>
+
+  <data name="About_Title" xml:space="preserve">
+    <value>Building enterprise software across backend, data and web.</value>
+  </data>
+
+  <data name="About_Paragraph1" xml:space="preserve">
+    <value>I'm a Software Engineer and Full Stack .NET Developer with professional experience building and maintaining enterprise applications using C#, .NET, ASP.NET and SQL Server.</value>
+  </data>
+
+  <data name="About_Paragraph2" xml:space="preserve">
+    <value>My current work focuses on insurance and reinsurance systems, where I contribute across backend services, database architecture, business logic, reporting, integrations and web applications.</value>
+  </data>
+
+  <data name="About_Paragraph3" xml:space="preserve">
+    <value>My experience spans ASP.NET Web Forms, WCF/SOAP services, SQL Server, T-SQL, SSRS/RDLC, IIS and JavaScript, alongside modern .NET development with .NET 10, Blazor WebAssembly and component-based web applications.</value>
+  </data>
+
+  <data name="Technologies_Label" xml:space="preserve">
+    <value>TECHNOLOGIES</value>
+  </data>
+
+  <data name="Technologies_Title" xml:space="preserve">
+    <value>Technologies I work with.</value>
+  </data>
+
+  <data name="Technologies_LanguagesWeb" xml:space="preserve">
+    <value>Languages &amp; Web</value>
+  </data>
+
+  <data name="Technologies_DotNetBackend" xml:space="preserve">
+    <value>.NET &amp; Backend</value>
+  </data>
+
+  <data name="Technologies_DataReporting" xml:space="preserve">
+    <value>Data &amp; Reporting</value>
+  </data>
+
+  <data name="Technologies_DevelopmentDeployment" xml:space="preserve">
+    <value>Development &amp; Deployment</value>
+  </data>
+
+  <data name="Technologies_RelationalDatabaseDesign" xml:space="preserve">
+    <value>Relational Database Design</value>
+  </data>
+
+  <data name="Technologies_StoredProcedures" xml:space="preserve">
+    <value>Stored Procedures</value>
+  </data>
+
+  <data name="Contact_Label" xml:space="preserve">
+    <value>CONTACT</value>
+  </data>
+
+  <data name="Contact_Title" xml:space="preserve">
+    <value>Let's build something together.</value>
+  </data>
+
+  <data name="Contact_Description" xml:space="preserve">
+    <value>I'm open to discussing software engineering opportunities, .NET development roles and projects involving backend or full-stack application development.</value>
+  </data>
+
+  <data name="Contact_DownloadCv" xml:space="preserve">
+    <value>Download CV</value>
+  </data>
+
+  <data name="Contact_LinkedInAriaLabel" xml:space="preserve">
+    <value>Visit my LinkedIn profile</value>
+  </data>
+
+  <data name="Contact_LinkedInValue" xml:space="preserve">
+    <value>Connect with me</value>
+  </data>
+
+  <data name="Contact_GmailAriaLabel" xml:space="preserve">
+    <value>Send me an email via Gmail</value>
+  </data>
+
+  <data name="Contact_GitHubAriaLabel" xml:space="preserve">
+    <value>Visit my GitHub profile</value>
+  </data>
+
+  <data name="Contact_GitHubValue" xml:space="preserve">
+    <value>Explore my repositories</value>
+  </data>
+
   <data name="Footer_Role" xml:space="preserve">
     <value>Software Engineer · Full Stack .NET Developer</value>
   </data>

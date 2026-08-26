@@ -1,15 +1,17 @@
-﻿<section id="technologies" class="technologies">
+﻿@inject IStringLocalizer<SharedResource> Localizer
+
+<section id="technologies" class="technologies">
 
     <div class="container">
 
         <div class="section-heading">
 
             <p class="section-label">
-                TECHNOLOGIES
+                @Localizer["Technologies_Label"]
             </p>
 
             <h2>
-                Technologies I work with.
+                @Localizer["Technologies_Title"]
             </h2>
 
         </div>
@@ -19,7 +21,7 @@
             <article class="technology-group">
 
                 <p class="technology-category">
-                    Languages &amp; Web
+                    @Localizer["Technologies_LanguagesWeb"]
                 </p>
 
                 <div class="technology-items">
@@ -34,7 +36,7 @@
             <article class="technology-group">
 
                 <p class="technology-category">
-                    .NET &amp; Backend
+                    @Localizer["Technologies_DotNetBackend"]
                 </p>
 
                 <div class="technology-items">
@@ -54,14 +56,21 @@
             <article class="technology-group">
 
                 <p class="technology-category">
-                    Data &amp; Reporting
+                    @Localizer["Technologies_DataReporting"]
                 </p>
 
                 <div class="technology-items">
                     <span>SQL Server</span>
                     <span>SQL / T-SQL</span>
-                    <span>Relational Database Design</span>
-                    <span>Stored Procedures</span>
+
+                    <span>
+                        @Localizer["Technologies_RelationalDatabaseDesign"]
+                    </span>
+
+                    <span>
+                        @Localizer["Technologies_StoredProcedures"]
+                    </span>
+
                     <span>SSRS</span>
                     <span>RDL / RDLC</span>
                     <span>XML</span>
@@ -73,7 +82,7 @@
             <article class="technology-group">
 
                 <p class="technology-category">
-                    Development &amp; Deployment
+                    @Localizer["Technologies_DevelopmentDeployment"]
                 </p>
 
                 <div class="technology-items">

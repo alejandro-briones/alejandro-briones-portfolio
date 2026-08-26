@@ -1,15 +1,17 @@
-﻿<section id="about" class="about">
+﻿@inject IStringLocalizer<SharedResource> Localizer
+
+<section id="about" class="about">
 
     <div class="container">
 
         <div class="section-heading">
 
             <p class="section-label">
-                ABOUT ME
+                @Localizer["About_Label"]
             </p>
 
             <h2>
-                Building enterprise software across backend, data and web.
+                @Localizer["About_Title"]
             </h2>
 
         </div>
@@ -17,24 +19,15 @@
         <div class="about-content">
 
             <p>
-                I'm a Software Engineer and Full Stack .NET Developer
-                with professional experience building and maintaining
-                enterprise applications using C#, .NET, ASP.NET and
-                SQL Server.
+                @Localizer["About_Paragraph1"]
             </p>
 
             <p>
-                My current work focuses on insurance and reinsurance
-                systems, where I contribute across backend services,
-                database architecture, business logic, reporting,
-                integrations and web applications.
+                @Localizer["About_Paragraph2"]
             </p>
 
             <p>
-                My experience spans ASP.NET Web Forms, WCF/SOAP services,
-                SQL Server, T-SQL, SSRS/RDLC, IIS and JavaScript, alongside
-                modern .NET development with .NET 10, Blazor WebAssembly
-                and component-based web applications.
+                @Localizer["About_Paragraph3"]
             </p>
 
         </div>
