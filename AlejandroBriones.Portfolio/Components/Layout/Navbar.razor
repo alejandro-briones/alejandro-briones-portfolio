@@ -13,53 +13,59 @@
 
         </a>
 
-        <button type="button"
-                class="menu-toggle @(_isMenuOpen ? "open" : "")"
-                @onclick="ToggleMenu"
-                aria-label="@(_isMenuOpen ? "Close navigation menu" : "Open navigation menu")"
-                aria-expanded="@_isMenuOpen.ToString().ToLowerInvariant()"
-                aria-controls="main-navigation">
+        <div class="navbar-actions">
 
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+            <nav id="main-navigation"
+                 class="navbar-links @(_isMenuOpen ? "open" : "")">
 
-        </button>
+                <a href="#about"
+                   @onclick="CloseMenu">
+                    About
+                </a>
 
-        <nav id="main-navigation"
-             class="navbar-links @(_isMenuOpen ? "open" : "")">
+                <a href="#experience"
+                   @onclick="CloseMenu">
+                    Experience
+                </a>
 
-            <a href="#about"
-               @onclick="CloseMenu">
-                About
-            </a>
+                <a href="#projects"
+                   @onclick="CloseMenu">
+                    Projects
+                </a>
 
-            <a href="#experience"
-               @onclick="CloseMenu">
-                Experience
-            </a>
+                <a href="#technologies"
+                   @onclick="CloseMenu">
+                    Technologies
+                </a>
 
-            <a href="#projects"
-               @onclick="CloseMenu">
-                Projects
-            </a>
+                <a href="#education"
+                   @onclick="CloseMenu">
+                    Education
+                </a>
 
-            <a href="#technologies"
-               @onclick="CloseMenu">
-                Technologies
-            </a>
+                <a href="#contact"
+                   @onclick="CloseMenu">
+                    Contact
+                </a>
 
-            <a href="#education"
-               @onclick="CloseMenu">
-                Education
-            </a>
+            </nav>
 
-            <a href="#contact"
-               @onclick="CloseMenu">
-                Contact
-            </a>
+            <ThemeToggle />
 
-        </nav>
+            <button type="button"
+                    class="menu-toggle @(_isMenuOpen ? "open" : "")"
+                    @onclick="ToggleMenu"
+                    aria-label="@(_isMenuOpen ? "Close navigation menu" : "Open navigation menu")"
+                    aria-expanded="@_isMenuOpen.ToString().ToLowerInvariant()"
+                    aria-controls="main-navigation">
+
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+
+            </button>
+
+        </div>
 
     </div>
 

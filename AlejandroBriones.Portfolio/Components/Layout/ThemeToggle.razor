@@ -1,0 +1,62 @@
+﻿@using AlejandroBriones.Portfolio.Services
+
+@implements IDisposable
+
+@inject ThemeService ThemeService
+
+<button type="button"
+        class="theme-toggle"
+        @onclick="ToggleThemeAsync"
+        disabled="@(!_isReady)"
+        aria-label="@ToggleLabel"
+        title="@ToggleLabel">
+
+    <i class="bi @ToggleIcon"
+       aria-hidden="true"></i>
+
+</button>
+
+@code {
+
+    private bool _isReady;
+
+    private string ToggleLabel =>
+        ThemeService.IsDarkMode
+            ? "Switch to light mode"
+            : "Switch to dark mode";
+
+    private string ToggleIcon =>
+        ThemeService.IsDarkMode
+            ? "bi-sun"
+            : "bi-moon-stars";
+
+    protected override async Task OnInitializedAsync()
+    {
+        ThemeService.ThemeChanged += OnThemeChanged;
+
+        await ThemeService.InitializeAsync();
+
+        _isReady = true;
+    }
+
+    private async Task ToggleThemeAsync()
+    {
+        if (!_isReady)
+        {
+            return;
+        }
+
+        await ThemeService.ToggleThemeAsync();
+    }
+
+    private void OnThemeChanged()
+    {
+        _ = InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        ThemeService.ThemeChanged -= OnThemeChanged;
+    }
+
+}
