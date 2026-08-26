@@ -108,6 +108,10 @@
     <value>Visit my GitHub profile</value>
   </data>
 
+  <data name="Hero_DownloadCvAriaLabel" xml:space="preserve">
+    <value>Download CV</value>
+  </data>
+  
   <data name="Hero_CoreStackAriaLabel" xml:space="preserve">
     <value>Core technology stack</value>
   </data>
