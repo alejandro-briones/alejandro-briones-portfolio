@@ -9,6 +9,12 @@ public sealed class CultureService
     public const string EnglishCulture = "en";
     public const string SpanishCulture = "es";
 
+    private const string EnglishCvFileName =
+        "Alejandro-Briones-CV-EN.pdf";
+
+    private const string SpanishCvFileName =
+        "Alejandro-Briones-CV-ES.pdf";
+
     private readonly IJSRuntime _jsRuntime;
     private readonly NavigationManager _navigationManager;
 
@@ -29,6 +35,14 @@ public sealed class CultureService
 
     public bool IsSpanish =>
         CurrentCulture == SpanishCulture;
+
+    public string CvFileName =>
+        IsSpanish
+            ? SpanishCvFileName
+            : EnglishCvFileName;
+
+    public string CvPath =>
+        $"documents/{CvFileName}";
 
     public Task SetEnglishAsync()
     {

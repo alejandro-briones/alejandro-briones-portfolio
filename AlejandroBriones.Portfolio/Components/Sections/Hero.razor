@@ -1,4 +1,7 @@
-﻿@inject IStringLocalizer<SharedResource> Localizer
+﻿@using AlejandroBriones.Portfolio.Services
+
+@inject IStringLocalizer<SharedResource> Localizer
+@inject CultureService CultureService
 
 <section id="home" class="hero">
 
@@ -77,8 +80,8 @@
                         GitHub
                     </a>
 
-                    <a href="documents/Alejandro-Briones-CV.pdf"
-                       download>
+                    <a href="@CultureService.CvPath"
+                       download="@CultureService.CvFileName">
 
                         <i class="bi bi-download"
                            aria-hidden="true"></i>

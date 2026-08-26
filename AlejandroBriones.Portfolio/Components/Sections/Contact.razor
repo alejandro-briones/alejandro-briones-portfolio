@@ -1,4 +1,7 @@
-﻿@inject IStringLocalizer<SharedResource> Localizer
+﻿@using AlejandroBriones.Portfolio.Services
+
+@inject IStringLocalizer<SharedResource> Localizer
+@inject CultureService CultureService
 
 <section id="contact" class="contact">
 
@@ -20,9 +23,9 @@
                     @Localizer["Contact_Description"]
                 </p>
 
-                <a href="documents/Alejandro-Briones-CV.pdf"
+                <a href="@CultureService.CvPath"
                    class="resume-button"
-                   download>
+                   download="@CultureService.CvFileName">
 
                     @Localizer["Contact_DownloadCv"]
 
