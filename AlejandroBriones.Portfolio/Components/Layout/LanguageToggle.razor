@@ -1,0 +1,50 @@
+﻿@using AlejandroBriones.Portfolio.Services
+
+@inject CultureService CultureService
+@inject IStringLocalizer<SharedResource> Localizer
+
+<button type="button"
+        class="language-toggle"
+        @onclick="ChangeLanguageAsync"
+        disabled="@_isChangingLanguage"
+        aria-label="@ToggleLabel"
+        title="@ToggleLabel"
+        lang="@TargetCulture">
+
+    @TargetLanguageCode
+
+</button>
+
+@code {
+
+    private bool _isChangingLanguage;
+
+    private string TargetCulture =>
+        CultureService.IsEnglish
+            ? CultureService.SpanishCulture
+            : CultureService.EnglishCulture;
+
+    private string TargetLanguageCode =>
+        CultureService.IsEnglish
+            ? "ES"
+            : "EN";
+
+    private string ToggleLabel =>
+        CultureService.IsEnglish
+            ? Localizer["Language_SwitchToSpanish"]
+            : Localizer["Language_SwitchToEnglish"];
+
+    private async Task ChangeLanguageAsync()
+    {
+        if (_isChangingLanguage)
+        {
+            return;
+        }
+
+        _isChangingLanguage = true;
+
+        await CultureService.SetCultureAsync(
+            TargetCulture);
+    }
+
+}

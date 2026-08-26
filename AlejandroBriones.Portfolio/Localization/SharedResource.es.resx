@@ -64,6 +64,14 @@
     <value>Cambiar a modo oscuro</value>
   </data>
 
+  <data name="Language_SwitchToSpanish" xml:space="preserve">
+    <value>Cambiar a español</value>
+  </data>
+
+  <data name="Language_SwitchToEnglish" xml:space="preserve">
+    <value>Cambiar a inglés</value>
+  </data>
+  
   <data name="Hero_OpenToRemoteOpportunities" xml:space="preserve">
     <value>Abierto a oportunidades remotas</value>
   </data>

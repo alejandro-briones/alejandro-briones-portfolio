@@ -64,6 +64,14 @@
     <value>Switch to dark mode</value>
   </data>
 
+  <data name="Language_SwitchToSpanish" xml:space="preserve">
+    <value>Switch to Spanish</value>
+  </data>
+
+  <data name="Language_SwitchToEnglish" xml:space="preserve">
+    <value>Switch to English</value>
+  </data>
+  
   <data name="Hero_OpenToRemoteOpportunities" xml:space="preserve">
     <value>Open to remote opportunities</value>
   </data>
