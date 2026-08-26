@@ -439,4 +439,20 @@
   <data name="Footer_BuiltWith" xml:space="preserve">
     <value>Desarrollado con Blazor WebAssembly y .NET 10</value>
   </data>
+
+  <data name="NotFound_PageTitle" xml:space="preserve">
+    <value>Página no encontrada</value>
+  </data>
+
+  <data name="NotFound_Title" xml:space="preserve">
+    <value>Página no encontrada</value>
+  </data>
+
+  <data name="NotFound_Description" xml:space="preserve">
+    <value>Lo sentimos, el contenido que estás buscando no existe.</value>
+  </data>
+
+  <data name="NotFound_BackHome" xml:space="preserve">
+    <value>Volver al inicio</value>
+  </data>  
 </root>
