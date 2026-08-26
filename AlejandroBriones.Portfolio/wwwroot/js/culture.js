@@ -14,6 +14,9 @@
             metaDescription:
                 "Software Engineer and Full Stack .NET Developer focused on backend development, enterprise applications, C#, .NET and SQL Server.",
 
+            socialSiteName:
+                "Alejandro Briones Portfolio",
+
             socialImageAlt:
                 "Alejandro Briones — Software Engineer and Full Stack .NET Developer Portfolio",
 
@@ -54,6 +57,9 @@
 
             metaDescription:
                 "Ingeniero de Software y Desarrollador Full Stack .NET enfocado en desarrollo backend, aplicaciones empresariales, C#, .NET y SQL Server.",
+
+            socialSiteName:
+                "Portafolio de Alejandro Briones",
 
             socialImageAlt:
                 "Portafolio de Alejandro Briones — Ingeniero de Software y Desarrollador Full Stack .NET",
@@ -158,6 +164,10 @@
         setMetaContent(
             'meta[property="og:description"]',
             translation.metaDescription);
+
+        setMetaContent(
+            'meta[property="og:site_name"]',
+            translation.socialSiteName);
 
         setMetaContent(
             'meta[property="og:image:alt"]',
