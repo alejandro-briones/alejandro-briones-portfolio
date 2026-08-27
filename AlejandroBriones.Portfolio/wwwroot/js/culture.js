@@ -53,28 +53,28 @@
 
         es: {
             pageTitle:
-                "Alejandro Briones | Ingeniero de Software y Desarrollador Full Stack .NET",
+                "Alejandro Briones | Ingeniero de Software y Full Stack .NET Developer",
 
             metaDescription:
-                "Ingeniero de Software y Desarrollador Full Stack .NET enfocado en desarrollo backend, aplicaciones empresariales, C#, .NET y SQL Server.",
+                "Ingeniero de Software y Full Stack .NET Developer con enfoque en desarrollo backend, aplicaciones empresariales, C#, .NET y SQL Server.",
 
             socialSiteName:
                 "Portafolio de Alejandro Briones",
 
             socialImageAlt:
-                "Portafolio de Alejandro Briones — Ingeniero de Software y Desarrollador Full Stack .NET",
+                "Portafolio de Alejandro Briones — Ingeniero de Software y Full Stack .NET Developer",
 
             loadingAriaLabel:
                 "Cargando el portafolio de Alejandro Briones",
 
             loadingRole:
-                "INGENIERO DE SOFTWARE · DESARROLLADOR FULL STACK .NET",
+                "INGENIERO DE SOFTWARE · FULL STACK .NET DEVELOPER",
 
             loadingTitle:
                 "Cargando portafolio",
 
             loadingDescription:
-                "Preparando la experiencia...",
+                "Preparando la experiencia del portafolio...",
 
             errorLabel:
                 "ERROR DEL PORTAFOLIO",
